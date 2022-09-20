@@ -2,7 +2,11 @@
 
 A highly configurable nix flake for neovim
 
-Originally based on Wil Taylor's amazing [neovim-flake](https://github.com/wiltaylor/neovim-flake)
+
+## Credits
+
+- [@wiltaylor](https://github.com/wiltaylor) (original author)
+- [@jordanisaacs](https://github.com/jordanisaacs)
 
 ## Installation
 
@@ -15,7 +19,7 @@ nix run .#
 If you want to live life on the edge you can run from this repository directly with:
 
 ```
-nix run github:jordanisaacs/neovim-flake#
+nix run github:ink-splatters/neovim-flake#
 ```
 
 ## Philosophy
@@ -29,7 +33,7 @@ As a result, one should never get a broken config when setting options. If setti
 ### Tidal Cycles:
 
 ```
-nix run github:jordanisaacs/neovim-flake#tidal file.tidal
+nix run github:ink-splatters/neovim-flake#tidal file.tidal
 ```
 
 Utilizing [vim-tidal](https://github.com/mitchmindtree/vim-tidal/tree/mitchmindtree) and mitchmindtree's fantastic [tidalcycles.nix](https://github.com/mitchmindtree/tidalcycles.nix) start playing with tidal cycles in a single command. Type on the first line of your tidal file, a cycle e.g. `d1 $ s "drum"` and then press `ctrl+enter`. Super collider with superdirt, and a modified GHCI with tidal will start up and begin playing. Note, you need jack enabled on your system. If you are using pipewire, its as easy as setting `services.pipewire.jack.enable = true`.
